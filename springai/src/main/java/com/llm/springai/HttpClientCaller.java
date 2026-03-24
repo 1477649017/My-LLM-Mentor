@@ -1,4 +1,4 @@
-package com.example.springai;
+package com.llm.springai;
 
 import java.io.IOException;
 import java.net.URI;
@@ -8,7 +8,6 @@ import java.net.http.HttpResponse;
 
 public class HttpClientCaller {
 
-    // 记得改成你自己的
     private static final String API_KEY = "sk-70e39654d23c4b23ade55d073565ae39";
     private static final String API_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
 
@@ -26,7 +25,7 @@ public class HttpClientCaller {
                             "content": "你好，介绍下JAVA？"
                         }
                     ],
-                    "stream": false
+                    "stream": true
                 }
                 """;
 
